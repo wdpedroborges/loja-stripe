@@ -1,4 +1,4 @@
-# Aplicação de Registro e Login
+# Loja Stripe
 
 Esta aplicação trata-se de uma loja feita com Node JS e a API do Stripe.
 
