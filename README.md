@@ -13,8 +13,8 @@ Esta aplicação trata-se de uma loja feita com Node JS e a API do Stripe.
 
 O arquivo .env não está neste repositório, pois ele contém a chave privada da API do Stripe. Ou seja, para você baixar esta aplicação e fazê-la funcionar no seu computador, será necessário criá-lo e informar as seguintes variáveis:
 
-SERVER_URL=http://localhost:3000
-STRIPE_PRIVATE_KEY=
+- SERVER_URL=http://localhost:3000
+- STRIPE_PRIVATE_KEY=
 
 ## Instalação
 
