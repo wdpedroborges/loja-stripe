@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Loja</title>
+	<script type="text/javascript" src="carrinho.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="grid">
+	<div class="produto">
+		<h2>Produto 1</h2>
+		<img src="https://via.placeholder.com/300x300">
+		<h3>R$15,00</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+		<button class="btnComprar" data-product="Produto 1">Comprar</button>
+	</div>
+	<div class="produto">
+		<h2>Produto 2</h2>
+		<img src="https://via.placeholder.com/300x300">
+		<h3>R$15,00</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+		<button class="btnComprar" data-product="Produto 2">Comprar</button>
+	</div>
+	<div class="produto">
+		<h2>Produto 3</h2>
+		<img src="https://via.placeholder.com/300x300">
+		<h3>R$15,00</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.</p>
+		<button class="btnComprar" data-product="Produto 3">Comprar</button>
+	</div>
+</div>
+
+<table id="carrinho">
+	<tr><th>Produto</th><th>Quantidade</th><th>Valor (R$)</th><th>Ação</th></tr>
+</table>
+
+<button id="btnFinalizarCompra">Finalizar compra</button>
+
+<template id="linhaSubtotal">
+	<tr class="subtotal"><th>Subtotal</th><td colspan="3"></td></tr>
+</template>
+
+<template id="produtoCarrinho">
+	<tr class="produtoCarrinho">
+		<td class="nomeProduto"></td>
+		<td><input type="number" name="quantidade" placeholder="Quantidade"></td>
+		<td class="precoCarrinho">R$</td>
+		<td><i class="removerProduto">🗑️</i></td>
+	</tr>
+</template>
+
+</body>
+</html>

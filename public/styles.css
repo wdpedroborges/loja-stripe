@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--primeira-cor: #060606;
+	--segunda-cor: #dbce41;
+	--terceira-cor: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--primeira-cor);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--segunda-cor);
+}
+
+::-moz-selection { /* para Firefox */
+    background-color: var(--primeira-cor);
+    color: var(--segunda-cor);
+  }
+  
+::selection {
+    background: var(--primeira-cor);
+    color: var(--segunda-cor);
+}
+
+.produto {
+	border: 1px solid #eee;
+	padding: 1rem;
+	border-radius: 1rem;
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+	grid-gap: 1rem;
+	margin: 1rem;
+}
+
+/* Banner */
+
+.banner {
+	height: 70vh;
+/*	background: linear-gradient(to right, rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url('../modelos/modelo-3.png');
+*/	background-repeat: no-repeat;
+	background-size: 250%;
+	background-attachment: fixed;
+	animation: moveBg 5s ease-in-out infinite;
+	color: var(--terceira-cor);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	cursor: pointer;
+	padding: 1rem;
+	border-radius: 1rem;
+	display: block;
+	margin: 1rem auto;
+	border: none;
+}
+
+button:hover {
+	opacity: .75;
+}
+
+i {
+	cursor: pointer;
+	font-style: normal;  
+	text-decoration: none;
+}
+
+i:hover {
+	opacity: .75;
+}
+
+#carrinho {
+	margin: 1rem auto;
+	border-collapse: collapse;
+}
+
+#carrinho td, #carrinho th {
+	border-bottom: 1px solid black;
+	padding: 1rem;
+	text-align: center;
+}
+
+#carrinho input {
+	border: none;
+	text-align: center;
+}
+
+@keyframes moveBg {
+	0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 25%;
+	}
+	75% {
+		background-position: 30% 75%;
+	}
+	90% {
+		background-position: 40% 90%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
